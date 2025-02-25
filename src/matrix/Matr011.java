@@ -19,6 +19,18 @@ public class Matr011 {
             }
             System.out.println();
         }
-        System.out.println();
+
+        for (int i = 0; i < m; i++) {
+            if(i % 2 == 0){
+                for (int j = 0; j < n; j++) {
+                    System.out.print(arr[i][j] + "\t");
+                }
+            } else {
+                for (int j = n - 1; j >= 0; j--) {
+                    System.out.print(arr[i][j] + "\t");
+                }
+            }
+            System.out.println();
+        }
     }
 }
